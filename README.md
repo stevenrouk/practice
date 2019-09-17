@@ -4,6 +4,10 @@ This is a repo for things I want to learn, or things I want to get better at.
 
 This is a repo for practice.
 
+_"You are what you constantly practice."_
+
+Focus on one of these a day. One topic, one exercise per day.
+
 ---
 
 **Progress List**
