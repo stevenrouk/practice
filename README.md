@@ -24,3 +24,19 @@ _These are things I want to practice._
     * Threads problems
 * Algorithm Design (book)
 * ISLR (book)
+* Machine learning projects (one of each kind)
+    * Regression project (supervised)
+    * Classification project (supervised)
+    * Clustering project (unsupervised)
+    * Neural net project - CNN
+    * Neural net project - RNN
+    * Deep learning project
+    * Reinforcement learning project
+* NLP
+* AWS: specializations
+* Spark
+* Docker
+* Python argparse library
+* Time series
+* Image recognition
+* GPT-2
