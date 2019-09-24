@@ -28,6 +28,7 @@ _These are things I want to practice._
     * Threads problems
 * Algorithm Design (book)
 * ISLR (book)
+    * Do the R exercises, but do them in Python
 * Machine learning projects (one of each kind)
     * Regression project (supervised)
     * Classification project (supervised)
@@ -36,6 +37,8 @@ _These are things I want to practice._
     * Neural net project - RNN
     * Deep learning project
     * Reinforcement learning project
+* Contributing to open source
+* Writing research papers and Medium articles
 * NLP
 * AWS: specializations
 * Spark
@@ -44,3 +47,5 @@ _These are things I want to practice._
 * Time series
 * Image recognition
 * GPT-2
+* Other languages: Haskell, Java, C, Scala.
+* Graph machine learning / graph networks
