@@ -9,6 +9,8 @@ $ docker pull mfeurer/auto-sklearn
 $ docker run -it mfeurer/auto-sklearn bin/bash
 ```
 
+_(Note: the above image doesn't have matplotlib, seaborn, or statsmodels installed. You can use the `stevenrouk/autosklearn` image if you want these packages, or see the Dockerfile in this repo if you want to install additional packages into your base autosklearn image.)
+
 Now that we're "inside" the Docker container, we can test importing autosklearn using ipython.
 
 ```shell
@@ -31,3 +33,4 @@ Notes:
     - seaborn
     - matplotlib
 * You can install these through Jupyter Notebooks if needed (in a terminal, or in the notebook itself using `!pip install ...`), but a better option would probably be to create a custom Docker image using a Dockerfile.
+* A slightly modified Dockerfile has been provided in this repo (see the file `Dockerfile`) that installs the above libraries when the Docker image is built. This specific image is also available on Docker Hub [here](https://hub.docker.com/r/stevenrouk/autosklearn), or you can pull the image by running `docker pull stevenrouk/autosklearn`.
