@@ -1,0 +1,2 @@
+1. starting with a simple linear regression, run regressions with one feature, then two, etc.
+Change the amount of collinearity, change the number of relevant features.
