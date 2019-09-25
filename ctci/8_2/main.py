@@ -1,9 +1,14 @@
-from grids import create_random_offlimits, GRID1, OFFLIMITS1, GRID2, OFFLIMITS2, GRID3, OFFLIMITS3
+from grids import create_random_offlimits, plot_grid, GRID1, OFFLIMITS1, GRID2, OFFLIMITS2, GRID3, OFFLIMITS3
 from solution_1 import find_path as find_path_solution_1
 from solution_2 import Board as Board_solution_2, Robot as Robot_solution_2
 from solution_3 import Board as Board_solution_3, Robot as Robot_solution_3, Path as Path_solution_3
 
 if __name__ == "__main__":
+    # Example of plotting grid
+    grid = [15, 25]
+    offlimits = create_random_offlimits(grid, 1/5, random_seed=42)
+    plot_grid(grid, offlimits)
+
     for i in range(20):
         print(i)
         grid = [10+i, 20+i]
