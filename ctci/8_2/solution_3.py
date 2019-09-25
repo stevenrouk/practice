@@ -6,12 +6,19 @@ class Board:
         self.grid = grid
         self.off_limits = off_limits
         self.goal = (self.grid[0] - 1, self.grid[1] - 1)
+        self.goal_blocked = self.is_goal_blocked()
     
     def is_off_limits(self, point):
         return (point in self.off_limits) or (point[0] > self.grid[0] - 1) or (point[1] > self.grid[1] - 1)
     
     def is_goal(self, point):
         return point == self.goal
+    
+    def is_goal_blocked(self):
+        left_of_goal = (self.goal[0], self.goal[1]-1)
+        top_of_goal = (self.goal[0]-1, self.goal[1])
+
+        return left_of_goal in self.off_limits and top_of_goal in self.off_limits
 
 class Path:
 
@@ -68,6 +75,9 @@ class Robot:
         self.paths_to_explore = [Path('R', self.board), Path('D', self.board)]
         self.failed_paths = set()
         self.successful_path = None
+        self.blocked_goal = self.board.is_goal_blocked()
+        if self.blocked_goal:
+            self.successful_path = 'F'
     
     def explore_next_path(self):
         if self.successful_path:
