@@ -2,6 +2,6 @@
 __pycache__
 .ipynb_checkpoints
 social.md
-ctci_images
+ctci/images/
 .DS_Store
 .vscode/
