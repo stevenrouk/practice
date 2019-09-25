@@ -1,6 +1,7 @@
 from grids import GRID1, OFFLIMITS1, GRID2, OFFLIMITS2, GRID3, OFFLIMITS3
 
 def find_path(grid, off_limits):
+    """Find a path from top-left to bottom-right using depth-first search."""
     goal = (grid[0] - 1, grid[1] - 1)
     if goal == (0, 1):
         return 'RS'
