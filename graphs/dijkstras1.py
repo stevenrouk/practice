@@ -59,8 +59,6 @@ class Dijkstra:
             if r[1] == start:
                 self.remaining[i] = (0, start)
                 continue
-        # path_dist, node = [x for x in self.remaining if x[1]==start][0]
-        # self.remaining.remove((path_dist, node))
         while len(self.remaining) > 0:
             path_dist, node = min(self.remaining)
             self.remaining.remove((path_dist, node))
@@ -68,8 +66,8 @@ class Dijkstra:
                 break
             for n, edge_weight in self.graph[node]:
                 if n in seen:
-                    pass
-                elif path_dist + edge_weight < self.distances[n]:
+                    continue
+                if path_dist + edge_weight < self.distances[n]:
                     self.distances[n] = path_dist + edge_weight
                     self.previous[n] = node
                     seen.add(n)
